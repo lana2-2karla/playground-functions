@@ -1,7 +1,14 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-} //VQV
+function compareTrue(numberOne,numberTwo) {
+  let numberOne = 150;
+  let numberTwo = 99;
+
+  if (numberOne % 2 == 0 && numberTwo % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+} 
 
 // Desafio 2
 function calcArea() {
