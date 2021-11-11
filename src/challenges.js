@@ -1,28 +1,30 @@
 // Desafio 1
 function compareTrue(numberOne,numberTwo) {
-  let numberOne = 150;
-  let numberTwo = 99;
-
   if (numberOne % 2 == 0 && numberTwo % 2 == 0) {
     return true;
   } else {
     return false;
   }
-} 
+}
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+  let calculo = (base * height) / 2;
+  return calculo;
 }
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+  let string = "Vamo que vamo";
+  let separator = " ";
+  let result = string.split(separator);
+  return result;
+  /** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split */
 }
 
 // Desafio 4
 function concatName() {
-  // seu código aqui
+  
 }
 
 // Desafio 5
