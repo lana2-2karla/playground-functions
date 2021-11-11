@@ -1,7 +1,7 @@
 // Desafio 1
 function compareTrue() {
   // seu código aqui
-}
+} //VQV
 
 // Desafio 2
 function calcArea() {
