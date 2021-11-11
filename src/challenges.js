@@ -24,7 +24,14 @@ function splitSentence() {
 
 // Desafio 4
 function concatName() {
-  
+  let array1 = ["foguete", "não" , "tem", "ré"];
+  let reverso = array1.reverse();
+  let final = reverso[0] + "," + reverso[3];
+  return final;
+  /**
+ * Consultei o repositório do Álvaro Ramos para resolver essa parte.
+ * https://github.com/tryber/sd-018-b-project-playground-functions/pull/31/commits/91659a74295dfdfd30c1b45247fe5241606f57b3
+ */
 }
 
 // Desafio 5
