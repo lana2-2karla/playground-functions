@@ -5,13 +5,13 @@ function compareTrue(numberOne,numberTwo) {
   } else {
     return false;
   }
-}
+};
 
 // Desafio 2
 function calcArea(base,height) {
   let calculo = (base * height) / 2;
   return calculo;
-}
+};
 
 // Desafio 3
 function splitSentence() {
@@ -20,7 +20,7 @@ function splitSentence() {
   let result = string.split(separator);
   return result;
   /** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split */
-}
+};
 
 // Desafio 4
 function concatName() {
@@ -32,28 +32,31 @@ function concatName() {
  * Consultei o repositório do Álvaro Ramos para resolver essa parte.
  * https://github.com/tryber/sd-018-b-project-playground-functions/pull/31/commits/91659a74295dfdfd30c1b45247fe5241606f57b3
  */
-}
+};
 
 // Desafio 5
 function footballPoints(wins, ties) {
   teamPoints = (wins * 3) + (ties * 1);
   return teamPoints;
-}
+};
 
 // Desafio 6
-function highestCount(arr, max) {
-  let arr = [9, 2, 9, 1];
+function highestCount(arr) {
   let max = arr[0];
-  let bigger = 0;
-  for (let i = 0; i < arr.length; i++);
-  if (max > arr[i]) {
-  return bigger += 1;
+  let repeticao = 0;
+  for (let i = 0; i < arr.length; i += 1) {
+  if (arr[i] >= max) {
+   max = arr[i];
+   }
   }
-  
-console.log(highestCount(arr, max));
-
-
-
+  for (let j = 0; j < arr.length; j += 1) {
+  if (arr[j] === max) {
+  repeticao += 1;
+  }
+  }
+  return repeticao;
+};
+ 
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
@@ -74,18 +77,18 @@ function fizzBuzz(arrBuzz) {
     }
    }
     return buzzResult;
-  }
+  };
   
 // Desafio 9
 function encode(phrase) {
   let newPhrase = phrase.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 4).replace(/u/gi, 5);
   return newPhrase;
   }
-  
 function decode(newPhrase) {
   let phrase = newPhrase.replace(/1/gi, "a").replace(/2/gi, "e").replace(/3/gi, "i").replace(/4/gi, "o").replace(/5/gi, "u");
   return phrase;
-}
+/** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace */
+};
 
 module.exports = {
   calcArea,
@@ -99,5 +102,4 @@ module.exports = {
   highestCount,
   splitSentence,
 };
-let vowels = ["a", "e", "i", "o", "u"];
-for (let i = 0; i < vowels.length; i += 1) {
+
