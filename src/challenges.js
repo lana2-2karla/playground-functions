@@ -14,13 +14,13 @@ function calcArea(base,height) {
 };
 
 // Desafio 3
-function splitSentence() {
-  let string = "Vamo que vamo";
+function splitSentence(stringTrybe) {
   let separator = " ";
-  let result = string.split(separator);
+  let result = stringTrybe.split(separator);
   return result;
   /** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split */
 };
+console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName(array1) {
