@@ -20,7 +20,6 @@ function splitSentence(stringTrybe) {
   return result;
   /** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split */
 };
-console.log(splitSentence('vamo que vamo'));
 
 // Desafio 4
 function concatName(array1) {
@@ -29,10 +28,10 @@ function concatName(array1) {
   if (reverso[0] && reverso.length-1) {
     arrayNew.push(reverso[0] + ", " + reverso[reverso.length-1]);
   }
-    /** Source: https://pt.stackoverflow.com/questions/87416/como-retornar-o-%C3%BAltimo-registro-de-um-array-com-javascript-ou-jquery */
-  return arrayNew;
+  /** Refêrencia modo de uso length: https://pt.stackoverflow.com/questions/87416/como-retornar-o-%C3%BAltimo-registro-de-um-array-com-javascript-ou-jquery */
+  return arrayNew.toString();
+  /** Refêrencia Array.prototype.toString(): https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/toString */
 };
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
