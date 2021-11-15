@@ -76,14 +76,15 @@ function fizzBuzz(arrBuzz) {
     return buzzResult;
   }
   
-
-
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
+function encode(phrase) {
+  let newPhrase = phrase.replace(/a/gi, 1).replace(/e/gi, 2).replace(/i/gi, 3).replace(/o/gi, 4).replace(/u/gi, 5);
+  return newPhrase;
+  }
+  
+function decode(newPhrase) {
+  let phrase = newPhrase.replace(/1/gi, "a").replace(/2/gi, "e").replace(/3/gi, "i").replace(/4/gi, "o").replace(/5/gi, "u");
+  return phrase;
 }
 
 module.exports = {
@@ -98,3 +99,5 @@ module.exports = {
   highestCount,
   splitSentence,
 };
+let vowels = ["a", "e", "i", "o", "u"];
+for (let i = 0; i < vowels.length; i += 1) {
