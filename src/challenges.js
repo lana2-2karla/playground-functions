@@ -23,15 +23,17 @@ function splitSentence() {
 };
 
 // Desafio 4
-function concatName() {
-  let array1 = ["foguete", "não" , "tem", "ré"];
+function concatName(array1) {
+  let arrayNew = [];
   let reverso = array1.reverse();
-  let final = reverso[0] + "," + reverso[3];
-  return final;
-  /**
- * Consultei o repositório do Álvaro Ramos para resolver essa parte.
- * https://github.com/tryber/sd-018-b-project-playground-functions/pull/31/commits/91659a74295dfdfd30c1b45247fe5241606f57b3
- */
+  if (reverso[0]) {
+    arrayNew.push(reverso[0]);
+  }
+  if (reverso.length-1) {
+    arrayNew.push(reverso[reverso.length-1]);
+    /** Source: https://pt.stackoverflow.com/questions/87416/como-retornar-o-%C3%BAltimo-registro-de-um-array-com-javascript-ou-jquery */
+  }
+  return arrayNew;
 };
 
 // Desafio 5
