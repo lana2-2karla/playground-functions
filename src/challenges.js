@@ -1,5 +1,5 @@
 // Desafio 1
-function compareTrue(numberOne,numberTwo) {
+function compareTrue(numberOne, numberTwo) {
   if (numberOne === true && numberTwo === true) {
     return true;
   } else {
@@ -26,15 +26,13 @@ function splitSentence() {
 function concatName(array1) {
   let arrayNew = [];
   let reverso = array1.reverse();
-  if (reverso[0]) {
-    arrayNew.push(reverso[0]);
+  if (reverso[0] && reverso.length-1) {
+    arrayNew.push(reverso[0] + ", " + reverso[reverso.length-1]);
   }
-  if (reverso.length-1) {
-    arrayNew.push(reverso[reverso.length-1]);
     /** Source: https://pt.stackoverflow.com/questions/87416/como-retornar-o-%C3%BAltimo-registro-de-um-array-com-javascript-ou-jquery */
-  }
   return arrayNew;
 };
+
 
 // Desafio 5
 function footballPoints(wins, ties) {
