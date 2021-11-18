@@ -58,8 +58,11 @@ function highestCount(arr) {
  
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceCat1 = (mouse - cat1);
-  let distanceCat2 = (mouse - cat2);
+ /** Entendimento sobre Math.abs: https://dirask.com/posts/JavaScript-Exemplo-de-m%C3%A9todo-Math-abs-paWka1 */
+//Não considera valores negativos!!
+
+  let distanceCat1 = Math.abs(mouse - cat1); 
+  let distanceCat2 = Math.abs(mouse - cat2);
   
   if (distanceCat1 < distanceCat2) {
     return "cat1";
