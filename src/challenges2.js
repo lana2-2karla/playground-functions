@@ -2,16 +2,16 @@
 function techList(arrList, name) {
   
   arrList.sort();
-  if (arrList.length === 0) {
-    return "Vazio!";
-  }
    let arrObject = [];
   for (let i = 0; i < arrList.length; i += 1) {
    arrObject.push({ tech: arrList[i], name});
   }
- return arrObject;
+  if (arrList.length === 0) {
+    return "Vazio!";
+  } else {
+    return arrObject;
+  }
 };
-  
   
 // Desafio 11
 function generatePhoneNumber() {
